@@ -4,7 +4,7 @@
     if(isset($_POST['search-person'])){
         $personName = $_POST['person-name'];
 
-        $query = "SELECT fullname, balance FROM persons WHERE fullname LIKE '$personName%'";
+        $query = "SELECT fullname, balance FROM persons WHERE fullname LIKE '$personName %'";
 
         $result = mysqli_query($dbConn, $query);
 
